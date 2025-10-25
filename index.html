@@ -1348,7 +1348,7 @@ document.querySelectorAll('#projects img').forEach(img => {
       const review = reviews[index];
 
       // --- NEW Image Fade Logic ---
-      const oldImg = imageContainer.querySelector('.main-image');
+      const oldImg = imageContainer.querySelector('.main-image.active');
       if (oldImg) {
         oldImg.classList.remove('active'); // This will trigger fade-out
       }
@@ -1381,7 +1381,7 @@ document.querySelectorAll('#projects img').forEach(img => {
 
 
       // --- NEW Text Fade Logic ---
-      const oldText = textContent.querySelector('.text-slide');
+      const oldText = textContent.querySelector('.text-slide.active');
       if (oldText) {
         oldText.classList.remove('active'); // Triggers fade-out
       }
