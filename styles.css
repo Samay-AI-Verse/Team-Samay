@@ -53,7 +53,7 @@ body {
 .logo {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 7px;
   text-decoration: none;
 }
 .logo-icon {
@@ -2639,4 +2639,33 @@ canvas + div[style*="spline.design"] {
     margin-left: 0 !important; /* Fixed: Override inline style */
     padding: 0 16px;
   }
+}
+
+
+.imagelogo{
+  width: 50px;
+}
+
+@media (max-width: 768px) {
+  #smooth-wrapper,
+  #smooth-content {
+    overflow: visible !important;
+    position: static !important;
+  }
+}
+
+
+
+a.logo span {
+  /* This font stack tries 'Brush Script MT' first, then falls back to any cursive font available */
+  font-family: 'Brush Script MT', cursive;
+}
+
+a.logo span {
+  /* Use 'Dancing Script' as the primary font, with 'cursive' as a fallback */
+  font-family: 'Dancing Script', cursive;
+  
+  /* You might need to adjust the font size or weight */
+  font-size: 1.5rem;  /* Example: Adjust as needed */
+  font-weight: 700;   /* Example: Make it bold */
 }
